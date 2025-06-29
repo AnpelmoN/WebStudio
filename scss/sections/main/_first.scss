@@ -1,0 +1,48 @@
+@import "../../components/logo";
+@import "../../utils/colors";
+@import "../../utils/common";
+@import "../../utils/mixin";
+@import "../../utils/placeholder";
+@import "../../utils/variables";
+
+.first {
+  &__container {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../img/first/background_1.png");
+    background-size: cover;
+    background-position: center;
+    @include flex(column, center, center, 73px);
+    height: 600px;
+  }
+  &__text {
+    @include text(900, center, 44px, $font-family);
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    width: 700px;
+  }
+
+  &__order {
+    @include flex(column, center, center);
+    height: 50px;
+
+    &-text {
+      @include text(bold, center, 16px, $font-family);
+      line-height: 187%;
+      letter-spacing: 0.06em;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  &__btn {
+    text-decoration: none;
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+  }
+}

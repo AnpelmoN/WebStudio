@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_container container">
+        <ul class="header__nav">
+          <li>
+            <a href="#" class="logo"
+              ><img
+                src="./img/logo/WebStudio.png"
+                alt="WebStudio"
+                class="header__logo"
+            /></a>
+          </li>
+          <li>
+            <a
+              class="header__link"
+              id="studio"
+              href="./pages/studio.html"
+              data-aos="fade-up"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__link"
+              href="./pages/portfolio.html"
+              data-aos="fade-up"
+              >Портфоліо</a
+            >
+          </li>
+          <li>
+            <a
+              class="header__link"
+              href="./pages/contacts.html"
+              data-aos="fade-up"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+        <address class="header__contact">
+          <ul class="header__contact__box">
+            <li class="header__contact__element">
+              <svg class="header__icon" width="16" height="12">
+                <use href="./svg/symbol-defs.svg#envelop-icon"></use>
+              </svg>
+              <a class="header__contact__box-email" href="#"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header__contact__element">
+              <svg class="header__icon" width="10" height="16">
+                <use href="./svg/symbol-defs.svg#phone-icon"></use>
+              </svg>
+              <a class="header__contact__box-tel" href="#">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+    <main>
+      <section class="first">
+        <div class="first__container">
+          <p class="first__text">Ефективні рішення для вашого бізнесу</p>
+          <button class="button">
+            <a href="#" class="first__btn">Замовити послугу</a>
+          </button>
+        </div>
+      </section>
+      <section class="second">
+        <div class="second__container">
+          <ul class="second__card">
+            <li class="second__box">
+              <img
+                src="./img/second/antenna.png"
+                alt="antenna"
+                class="second__img"
+              />
+            </li>
+            <li>
+              <p class="second__title">УВАГА ДО ДЕТАЛЕЙ</p>
+            </li>
+            <li>
+              <p class="second__info">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+          </ul>
+          <ul class="second__card">
+            <li class="second__box">
+              <img
+                src="./img/second/clock.png"
+                alt="clock"
+                class="second__img"
+              />
+            </li>
+            <li>
+              <p class="second__title">ПУНКТУАЛЬНІСТЬ</p>
+            </li>
+            <li>
+              <p class="second__info">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+          </ul>
+          <ul class="second__card">
+            <li class="second__box">
+              <img
+                src="./img/second/diagram.png"
+                alt="diagrama"
+                class="second__card-img"
+              />
+            </li>
+            <li>
+              <p class="second__title">ПЛАНУВАННЯ</p>
+            </li>
+            <li>
+              <p class="second__info">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+          </ul>
+          <ul class="second__card">
+            <li class="second__box">
+              <img
+                src="./img/second/astronaut.png"
+                alt="astronaut"
+                class="second__img"
+              />
+            </li>
+            <li>
+              <p class="second__title">СУЧАСНІ ТЕХНОЛОГІЇ</p>
+            </li>
+            <li>
+              <p class="second__info">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="third">
+        <div class="third__container">
+          <h2 class="third__title">Чим ми займаємося</h2>
+          <ul class="third__gallery">
+            <li class="third__card">
+              <img src="./img/third/typing.jpg" alt="typing" />
+              <p class="third__subtitle">Десктопні додатки</p>
+            </li>
+            <li class="third__card">
+              <img src="./img/third/tablet.png" alt="tablet" />
+              <p class="third__subtitle">Мобільні додатки</p>
+            </li>
+            <li class="third__card">
+              <img src="./img/third/phone.png" alt="phone" />
+              <p class="third__subtitle">Дизайнерські рішення</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="fourth">
+        <div class="fourth__container">
+          <h2 class="fourth__title">Наша команда</h2>
+
+          <ul class="fourth__gallery">
+            <li class="fourth__card">
+              <img src="./img/fourth/Igor.jpg" alt="Igor" class="fourth__img" />
+              <h3 class="fourth__name">Ігор Дем'яненко</h3>
+              <p class="fourth__text">Product Designer</p>
+              <div class="fourth__box">
+                <svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#twiter"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#indeed"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="fourth__card">
+              <img src="./img/fourth/Olga.jpg" alt="Olga" class="fourth__img" />
+              <h3 class="fourth__name">Ольга Рєпіна</h3>
+              <p class="fourth__text">Frontend Developer</p>
+              <div class="fourth__box">
+                <svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#twiter"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#indeed"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="fourth__card">
+              <img
+                src="./img/fourth/Mikola.jpg"
+                alt="Mikola"
+                class="fourth__img"
+              />
+              <h3 class="fourth__name">Микола Тарасов</h3>
+              <p class="fourth__text">Marketing</p>
+              <div class="fourth__box">
+                <svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#twiter"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#indeed"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="fourth__card">
+              <img
+                src="./img/fourth/Mikhaylo.jpg"
+                alt="Mikhaylo"
+                class="fourth__img"
+              />
+              <h3 class="fourth__name">Михайло Єрмаков</h3>
+              <p class="fourth__text">UI Designer</p>
+              <div class="fourth__box">
+                <svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#twiter"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                ><svg width="20" height="20" class="fourth__icon">
+                  <use href="./svg/symbol-defs.svg#indeed"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="fifth">
+        <div class="fifth__container">
+          <h2 class="fifth__title">Постійні клієнти</h2>
+          <ul class="fifth__box">
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/va.png"
+                alt="YA & CO"
+                class="fifth__client-img"
+              />
+            </li>
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/tagline.png"
+                alt="Tagline here"
+                class="fifth__client-img"
+              />
+            </li>
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/company.png"
+                alt="company"
+                class="fifth__client-img"
+              />
+            </li>
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/foster.png"
+                alt="Foster Peters"
+                class="fifth__client-img"
+              />
+            </li>
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/brand.png"
+                alt="Brand"
+                class="fifth__client-img"
+              />
+            </li>
+            <li class="fifth__client">
+              <img
+                src="./img/fifth/Object.png"
+                alt="Company tag line"
+                class="fifth__client-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div>
+            <img
+              src="./img/logo/WebStudio_dark.png"
+              alt="WebStudio"
+              class="footer__logo"
+            />
+            <address class="footer__address">
+              <ul class="footer__contacts">
+                <li class="footer__item">
+                  <p class="footer__text footer__text--address">
+                    м. Київ, пр-т Лесі Українки, 26
+                  </p>
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@devstudio.com" class="footer__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__media">
+                <li>
+                  <h2 class="footer__subtitle">приєднуйтесь</h2>
+                </li>
+                <li class="footer__box">
+                  <svg width="20" height="20" class="footer__icon">
+                    <use href="./svg/symbol-defs.svg#instagram"></use></svg
+                  ><svg width="20" height="20" class="footer__icon">
+                    <use href="./svg/symbol-defs.svg#twitter"></use></svg
+                  ><svg width="20" height="20" class="footer__icon">
+                    <use href="./svg/symbol-defs.svg#facebook"></use></svg
+                  ><svg width="20" height="20" class="footer__icon">
+                    <use href="./svg/symbol-defs.svg#indeed"></use>
+                  </svg>
+                </li>
+              </ul>
+              <ul class="footer__mail">
+                <li>
+                  <h2 class="footer__subtitle">Підпишіться на розсилку</h2>
+                </li>
+                <li class="footer__email">
+                  <input
+                    class="footer__input"
+                    type="email"
+                    id="email"
+                    placeholder="E-mail"
+                  />
+                  <button type="submit" class="footer__btn">
+                    Підписатися
+                    <svg width="24" height="24" class="icon">
+                      <use href="./svg/symbol-defs.svg#telegram "></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

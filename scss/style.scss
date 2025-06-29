@@ -1,0 +1,18 @@
+@import "./components/logo";
+@import "./components/button";
+
+@import "./utils/colors";
+@import "./utils/common";
+@import "./utils/mixin";
+@import "./utils/placeholder";
+@import "./utils/variables";
+
+@import "./sections/header/header";
+
+@import "./sections/main/first";
+@import "./sections/main/second";
+@import "./sections/main/third";
+@import "./sections/main/fourth";
+@import "./sections/main/fifth";
+
+@import "./sections/footer/footer";

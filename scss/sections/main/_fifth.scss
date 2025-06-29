@@ -1,0 +1,19 @@
+@import "../../components/logo";
+@import "../../utils/colors";
+@import "../../utils/common";
+@import "../../utils/mixin";
+@import "../../utils/placeholder";
+@import "../../utils/variables";
+
+.fifth {
+  &__container {
+    @include flex(column, center, center, 41px);
+    padding: 73px;
+  }
+  &__title {
+    @include section_title();
+  }
+  &__box {
+    @include flex(row, space-between, center, 30px);
+  }
+}

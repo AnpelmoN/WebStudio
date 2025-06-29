@@ -1,0 +1,47 @@
+@import "../../components/logo";
+@import "../../utils/colors";
+@import "../../utils/common";
+@import "../../utils/mixin";
+@import "../../utils/placeholder";
+@import "../../utils/variables";
+
+.fourth {
+  background-color: #f5f4fa;
+  &__container {
+    background-color: $second-bc-color;
+    @include flex(column, center, center, 73px);
+    padding: 73px;
+  }
+  &__title {
+    @include section-title;
+  }
+  &__gallery {
+    @include flex(row, space-between, center, 30px);
+  }
+  &__card {
+    @include flex(column, space-evenly, center, 15px);
+    @include card(270px, #fff, 0 0 30px 0, 0 0 4px 4px);
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+  &__text {
+    @include text(400, center, 16px, $font-family);
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+  &__name {
+    @include text(500, center, 16px, $font-family);
+    letter-spacing: 0.03em;
+    color: $main-color;
+  }
+  &__img {
+    width: 270px;
+  }
+  &__box {
+    display: flex;
+    gap: 22px;
+  }
+  &__icon {
+    fill: #afb1b8;
+  }
+}

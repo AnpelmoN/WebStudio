@@ -1,0 +1,79 @@
+@import "../utils/colors";
+@import "../utils/variables";
+@import "../utils/common";
+
+@mixin text($fontW: 400, $textpos: left, $fontS: 16px, $fontF: $font-family) {
+  font-weight: $fontW;
+  text-align: $textpos;
+  font-size: $fontS;
+  font-family: $fontF;
+}
+
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  @if $gap != 0 {
+    gap: $gap;
+  }
+}
+
+@mixin card($width: 270px, $bg: #fff, $padding: 0, $radius: 0) {
+  width: $width;
+  background-color: $bg;
+  @if $padding != 0 {
+    padding: $padding;
+  }
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin section-title($size: 36px, $color: $main-color) {
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: $size;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $color;
+}
+
+@mixin section-padding(
+  $padtopDesk,
+  $padbottomDesk,
+  $padtopTab,
+  $padbottomTab,
+  $padtopMob,
+  $padbottomMob
+) {
+  padding-top: $padtopDesk;
+  padding-bottom: $padbottomDesk;
+  @media (max-width: 768px) {
+    padding-top: $padtopTab;
+    padding-bottom: $padbottomTab;
+  }
+  @media (max-width: 480px) {
+    padding-top: $padtopMob;
+    padding-bottom: $padbottomMob;
+  }
+}
+@mixin section-padding($ptDesk, $ptTab, $ptMob) {
+  padding-top: $ptDesk;
+  @media (max-width: 768px) {
+    padding-top: $ptMob;
+  }
+  @media (max-width: 1280px) {
+    padding-top: $ptMob;
+  }
+}
+
+@mixin section-padding-general($ptDesk, $ptTab, $ptMob) {
+  padding-top: $ptDesk;
+  @media (min-width: 768px) {
+    padding-top: $ptMob;
+  }
+  @media (min-width: 1280px) {
+    padding-top: $ptMob;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../components/logo";
+@import "../../utils/colors";
+@import "../../utils/common";
+@import "../../utils/mixin";
+@import "../../utils/placeholder";
+@import "../../utils/variables";
+
+.second {
+  &__container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 73px;
+  }
+  &__card {
+    @include flex(column, flex-start, center, 15px);
+    width: 270px;
+    height: 248px;
+  }
+  &-img {
+    background-color: $second-bc-color;
+  }
+  &__title {
+    @include text(bold, left, 14px, $font-family);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color;
+    align-self: self-start;
+  }
+
+  &__info {
+    @include text(400, left, 14px, $font-family);
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+  &__box {
+    @include flex();
+    @include card(270, $second-bc-color, 0, 0);
+    background: #f5f4fa;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+  }
+}
